@@ -76,17 +76,19 @@ fun quote(){
     fun randnum(from:Int, to:Int):Int{
         return (from..to).random();
     }
-    var quotes = arrayOf("Our greatest glory is not in never falling, but in rising every time we fall. Confucius",
-        "Attitude is a little thing that makes a big difference. Winston Churchill",
-        "Never, never, never give up. Winston Churchill",
-        "History never looks like history when you are living through it. John W. Gardner")
+    var quotes = arrayOf("It takes courage to grow up and become who you really are. -  E.E. Cummings",
+        "Your self-worth is determined by you. You don't have to depend on someone telling you who you are. - Beyoncé",
+        "Nothing is impossible. The word itself says 'I'm possible! - Audrey Hepburn",
+        "Keep your face always toward the sunshine, and shadows will fall behind you.- Walt Whitman",
+        "Attitude is a little thing that makes a big difference. - Winston Churchill",
+        "All our dreams can come true, if we have the courage to pursue them. - Walt Disney")
     var randomNumber by remember { mutableStateOf(0) }
     var temp = 0
 
     Column (modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,){
         Row(){
-            Text(quotes[randomNumber], color= Color.Red, fontSize=20.sp,
+            Text(quotes[randomNumber], color= Color.Black, fontSize=20.sp,
                 fontStyle = androidx.compose.ui.text.font.FontStyle.Italic)
         }
         Row(){
